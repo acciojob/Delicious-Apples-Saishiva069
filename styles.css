@@ -1,1 +1,136 @@
 /* your code here */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.product {
+    width: 900px;
+    margin: 50px auto;
+    display: flex;
+    background: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+/* LEFT SECTION */
+.product__photo {
+    width: 45%;
+    background: linear-gradient(to bottom, #9be15d, #00e3ae);
+    padding: 20px;
+}
+
+.photo-container {
+    text-align: center;
+}
+
+.photo-main {
+    position: relative;
+}
+
+.photo-main img {
+    width: 100%;
+    max-width: 320px;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.photo-album ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.photo-album li {
+    background: white;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.photo-album img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+
+/* RIGHT SECTION */
+.product__info {
+    width: 55%;
+    padding: 40px;
+}
+
+.title h1 {
+    margin: 0;
+    color: #333;
+}
+
+.title span {
+    color: gray;
+    font-size: 14px;
+}
+
+.price {
+    margin: 20px 0;
+    color: #e53935;
+    font-size: 24px;
+}
+
+.price span {
+    font-size: 42px;
+    font-weight: bold;
+}
+
+.variant h3,
+.description h3 {
+    color: #444;
+    margin-bottom: 10px;
+}
+
+.variant ul {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    padding: 0;
+}
+
+.variant li {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.variant img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+.description ul {
+    color: #555;
+    line-height: 1.8;
+    padding-left: 20px;
+}
+
+button {
+    margin-top: 30px;
+    padding: 15px 30px;
+    border: none;
+    background: #e53935;
+    color: white;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
